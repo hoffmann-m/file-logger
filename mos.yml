@@ -14,6 +14,7 @@ config_schema:
   - ["file_logger.enable", "b", false, {"title": "Enable"}]
   - ["file_logger.dir", "s", "/", {"title": "Directory to store log files into"}]
   - ["file_logger.prefix", "s", "log_", {"title": "Prefix for the log files"}]
+  - ["file_logger.logfile_timestamp", "b", true, {"title": "Timestamp for the log files>"}]
   - ["file_logger.max_file_size", "i", 4000, {"title": "Max size of each log file"}]
   - ["file_logger.max_num_files", "i", 10, {"title": "Max number of files. At most 100 files are supported."}]
   - ["file_logger.timestamps", "b", true, {"title": "Add timestamps to entries (uptime)"}]
