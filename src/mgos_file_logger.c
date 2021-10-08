@@ -83,11 +83,6 @@ static char *get_new_log_filename(void) {
                 (int) logsdir.len, logsdir.p,
                 mgos_sys_config_get_file_logger_prefix(), s_set, s_seq);
   }
-  mg_asprintf(&ret, 0, "%.*s/%s%d%.2d-%.4d%.2d%.2d-%.2d%.2d%.2d.log",
-              (int) logsdir.len, logsdir.p,
-              mgos_sys_config_get_file_logger_prefix(), s_set, s_seq,
-              tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour,
-              tm.tm_min, tm.tm_sec);
   return ret;
 }
 
